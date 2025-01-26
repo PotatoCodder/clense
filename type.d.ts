@@ -23,7 +23,7 @@ export type Posts = {
 }
 
 export type paramsProp = {
-  id: stringm,
+  id: string,
 }
 export type GroupData = {
   id: number,
