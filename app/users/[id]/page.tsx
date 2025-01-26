@@ -4,14 +4,14 @@ import { User } from '@/type';
 import Image from 'next/image';
 
 interface PageProps {
-  params: {
+  params: Promise< {
     id: string;
-  };
+  }>;
 }
 
 export default function UserPage({ params }: PageProps) {
-  const { id } = use(params);
-
+  const { id } = use(params); // Correctly destructure id here.
+  
   const [user, setUser] = useState<User | null>(null);
   const [error, setError] = useState<string>('');
 

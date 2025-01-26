@@ -22,13 +22,19 @@ export type Posts = {
   date: string,
 }
 
-export type paramsProp = {
-  id: string,
-}
+export type ParamProp = {
+  params: {
+      id: string
+    }
+  }
+export type IdPromise = {
+    params: Promise<{
+        id: string
+      }>
+    }
 export type GroupData = {
   id: number,
   name: string,
   bio: string,
   members: number,
-
 }
