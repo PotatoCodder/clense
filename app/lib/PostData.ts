@@ -1,0 +1,73 @@
+import { Posts } from '@/type'
+export const posts: Posts[] = [
+  {
+    id: 1,
+    name: 'kenzaki kato',
+    title: 'Seven deadly sins',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '2020-01-01',
+  },
+  {
+    id: 2,
+    name: 'ohtani manji',
+    title: 'Seven deadly sins',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '2020-01-01',
+  },
+  {
+    id: 3,
+    name: 'sakamoto kazuya',
+    title: 'Seven deadly sins',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '2020-01-01',
+  },
+  {
+    id: 4,
+    name: 'akira katsu',
+    title: 'Seven deadly sins',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '2020-01-01',
+  },
+  {
+    id: 5,
+    name: 'daisuke kobayashi',
+    title: 'Seven deadly sins',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '2020-01-01',
+  },
+  {
+    id: 6,
+    name: 'chikara kawasaki',
+    title: 'Seven deadly sins',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '2020-01-01',
+  },
+  {
+    id: 7,
+    name: 'hayashi kenji',
+    title: 'Seven deadly sins',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '2020-01-01',
+  },
+  {
+    id: 8,
+    name: 'leonard kawasaki',
+    title: 'Seven deadly sins',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '2020-01-01',
+  },
+  {
+    id: 9,
+    name: 'michael kawasaki',
+    title: 'Seven deadly sins',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '2020-01-01',
+  },
+  {
+    id: 10,
+    name: 'takashi akagi',
+    title: 'Seven deadly sins',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '2020-01-01',
+  },
+]
