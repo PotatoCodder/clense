@@ -82,7 +82,7 @@ export default function Sidebar() {
               posts.map((post: any) => (
                 <li key={post.id}>
                   <Link
-                    href={`/posts/${post.id}`}
+                    href={`/post/${post.id}`}
                     className="block p-3 rounded-lg hover:bg-white transition-colors duration-200"
                   >
                     <div className="flex items-center">

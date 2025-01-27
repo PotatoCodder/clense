@@ -10,7 +10,7 @@ export const users: User[] = [
      city: 'TOKYO',
      username: 'USERNAME',
      password: '123456',
-     status: true
+     status: false
   },
   {
      id: 2,
@@ -96,6 +96,17 @@ export const users: User[] = [
      age: 17,
      email: 'EMAIL',
      city: 'TOKYO',
+     username: 'USERNAME',
+     password: '123456',
+     status: true
+  },
+  {
+     id: 10,
+     name: 'NigHacker',
+     bio: 'I am a    Nigger from PWC',
+     age: 21,
+     email: 'EMAIL',
+     city: 'Bangerohan',
      username: 'USERNAME',
      password: '123456',
      status: true
