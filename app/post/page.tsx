@@ -1,23 +1,13 @@
-import React from 'react'
+import ShareFeed from '@/app/components/ShareFeed'; // Import the client component
+import LikeFeed from '../components/LikeFeed';
 export default async function PostsPage() {
-  const res = await fetch("http://localhost:3000/api/posts");
+  const res = await fetch("http://localhost:3000/api/posts", { cache: 'no-store' });
 
-  if(!res.ok) {
-    throw new Error("No Post or no post found ");
+  if (!res.ok) {
+    throw new Error("No Post or no post found");
   }
 
   const posts = await res.json();
-  
-  const shareFeed = () => {
-      return(
-        <div>
-          <h1>share</h1>
-          <input 
-          type="text"
-          />
-        </div>
-      )
-    }
 
   return (
     <div className="max-w-2xl mx-auto font-sans">
@@ -28,9 +18,9 @@ export default async function PostsPage() {
         {posts.map((post: any) => (
           <div key={post.id} className="bg-white border border-gray-300 rounded-lg mb-4 p-4 shadow">
             <div className="flex items-center mb-3">
-              <img 
-                src={post.avatar || '/default-avatar.png'} 
-                alt={post.name} 
+              <img
+                src={post.avatar || '/default-avatar.png'}
+                alt={post.name}
                 className="w-10 h-10 rounded-full mr-3"
               />
               <div>
@@ -41,13 +31,14 @@ export default async function PostsPage() {
             <h3 className="font-bold text-lg mb-2">{post.title}</h3>
             <p className="text-gray-700 mb-4">{post.content}</p>
             <div className="flex justify-between border-t pt-3">
-              <button className="text-gray-600 hover:text-blue-600">Like</button>
+              <LikeFeed postId={post.id} />
               <button className="text-gray-600 hover:text-blue-600">Comment</button>
-              <button className="text-gray-600 hover:text-blue-600">Share</button>
+              {/* Share button opens the ShareFeed client component */}
+              <ShareFeed postId={post.id} />
             </div>
           </div>
         ))}
       </main>
     </div>
-  )
+  );
 }
