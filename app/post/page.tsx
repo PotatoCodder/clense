@@ -31,7 +31,7 @@ export default async function PostsPage() {
             <h3 className="font-bold text-lg mb-2">{post.title}</h3>
             <p className="text-gray-700 mb-4">{post.content}</p>
             <div className="flex justify-between border-t pt-3">
-              <LikeFeed postId={post.id} />
+              <LikeFeed postId={post.id} postName={post.name} />
               <button className="text-gray-600 hover:text-blue-600">Comment</button>
               {/* Share button opens the ShareFeed client component */}
               <ShareFeed postId={post.id} />
